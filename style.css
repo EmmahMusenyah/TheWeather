@@ -17,6 +17,14 @@ body {
   color: rgb(255, 255, 255);
 }
 
+ul {
+  list-style: none;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
 .degrees {
   margin-left: 8px;
   font-size: 60px;
