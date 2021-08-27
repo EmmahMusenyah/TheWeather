@@ -1,5 +1,47 @@
 body {
   font-family: Segoe UI, Segoe WP, Arial, Sans-Serif;
-  background: #ffffff;
   margin: 0;
+}
+
+.container {
+  width: 612px;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px 0 auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  background-image: url(https://assets.msn.com/weathermapdata/1/static/background/v2.0/compactads3/Sunny.png);
+  color: rgb(255, 255, 255);
+}
+
+.degrees {
+  margin-left: 8px;
+  font-size: 60px;
+  line-height: 75px;
+  width: 94px;
+  align-items: center;
+}
+
+.conversion {
+  position: relative;
+  top: -30px;
+  font-weight: bold;
+}
+
+h1 {
+  display: flex;
+  font-family: "Segoe UI", "Segoe WP", Arial, sans-serif;
+  height: 24px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  position: relative;
+  width: 1236px;
+  z-index: 100;
+}
+
+small {
+  left: 60px;
 }
