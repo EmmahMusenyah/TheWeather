@@ -1,26 +1,38 @@
 body {
   font-family: Segoe UI, Segoe WP, Arial, Sans-Serif;
   margin: 0;
+  display: block;
 }
 
 .container {
-  width: 600px;
-}
-
-.weather-app {
-  max-width: 700px;
+  max-width: 600px;
   margin: 30px 0 auto;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
   background-image: url(https://assets.msn.com/weathermapdata/1/static/background/v2.0/compactads3/Sunny.png);
   color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.weather-app {
+  max-width: 590px;
+  margin: 30px 0 auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 
 ul {
   list-style: none;
 }
 
+li {
+  position: relative;
+  left: -25px;
+}
 .date {
   position: relative;
   left: -30px;
@@ -56,6 +68,51 @@ h1 {
   z-index: 100;
 }
 
+.forecast-title,
+.current-weather {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.current-weather {
+  margin-top: 0 auto;
+  margin: 0px;
+}
+
+.forecast-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.forecast-high {
+  font-weight: bold;
+}
+
+.forecast-low {
+  opacity: 0.7;
+}
+
+button {
+  width: 100px;
+  height: 120px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: inherit;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 108px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  padding: 0;
+}
 small {
   left: 60px;
 }

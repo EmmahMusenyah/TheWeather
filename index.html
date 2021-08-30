@@ -20,22 +20,23 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form id="search-form" class="mb-3">
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city Name"
-                class="form-control"
-                id="city-input"
-              />
-            </div>
-            <div class="col-3">
-              <input type="submit" value="Search" class="btn btn-light" />
-            </div>
+      <form id="search-form" class="mb-3">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Enter a city Name"
+              class="form-control"
+              id="city-input"
+            />
           </div>
-        </form>
+          <div class="col-3">
+            <input type="submit" value="Search" class="btn btn-light" />
+          </div>
+        </div>
+      </form>
+      <div class="weather-app">
+        <p class="current-weather">CURRENT WEATHER</p>
         <h1 id="city"></h1>
         <ul>
           <li class="date">
@@ -73,6 +74,28 @@
           <div class="col-4">
             Wind:
             <p id="wind">0 mph</p>
+          </div>
+        </div>
+      </div>
+      <div class="forecast">
+        <div class="forecast-title">Weather Forecast</div>
+
+        <div class="row">
+          <div class="col-2">
+            <button>
+              <ul>
+                <li class="forecast-date">Thur</li>
+                <li class="forecast-icon">
+                  <img
+                    src="https://assets.msn.com/bundles/v1/weather/latest/MostlySunnyDay.svg"
+                    alt=""
+                    width="36px"
+                  />
+                </li>
+                <li class="forecast-high">25°</li>
+                <li class="forecast-low">13°</li>
+              </ul>
+            </button>
           </div>
         </div>
       </div>
