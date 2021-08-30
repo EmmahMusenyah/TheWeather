@@ -92,7 +92,7 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  degreesElement.innerHTML = Math.round(response.data.main.temp);
+  degreesElement.innerHTML = `${Math.round(response.data.main.temp)}°`;
   descriptionElement.innerHTML = response.data.weather[0].description;
   comparisonElement.innerHTML = `Feels like ${comparison}°C`;
   pressureElement.innerHTML = `${response.data.main.pressure}Hg`;
