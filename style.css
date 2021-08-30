@@ -2,6 +2,7 @@ body {
   font-family: Segoe UI, Segoe WP, Arial, Sans-Serif;
   margin: 0;
   display: block;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
   max-width: 590px;
   margin: 30px 0 auto;
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 0.5px solid #dadde1;
   border-radius: 5px;
   color: rgb(255, 255, 255);
   margin-bottom: 30px;
@@ -114,4 +115,8 @@ button {
 }
 small {
   left: 60px;
+}
+
+a {
+  font-weight: bold;
 }
