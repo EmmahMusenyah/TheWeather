@@ -3,10 +3,12 @@ body {
   margin: 0 auto;
   display: block;
   max-width: 100%;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .container {
-  max-width: 100%;
+  max-width: 80%;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid hsl(214, 10%, 87%);
@@ -19,10 +21,8 @@ body {
 .weather-app {
   max-width: 590px;
   margin: 30px 0 auto;
-
   padding: 20px;
   border: 1px solid grey;
-
   border-radius: 5px;
   color: white;
   margin-bottom: 30px;
@@ -36,6 +36,7 @@ li {
   position: relative;
   left: -25px;
 }
+
 .date {
   position: relative;
   left: -30px;
@@ -81,16 +82,16 @@ h1 {
 
 .current-weather {
   margin-top: 0 auto;
-  margin: 0px;
 }
 
 .forecast-title {
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .forecast-high {
   font-weight: bold;
+  opacity: 2;
 }
 
 .forecast-low {
@@ -116,7 +117,7 @@ button {
   padding: 0;
 }
 small {
-  left: 60px;
+  margin-left: 110px;
 }
 
 a {
