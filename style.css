@@ -1,17 +1,17 @@
 body {
   font-family: Segoe UI, Segoe WP, Arial, Sans-Serif;
-  margin: 0;
+  margin: 0 auto;
   display: block;
-  margin-bottom: 30px;
+  max-width: 100%;
 }
 
 .container {
-  max-width: 600px;
-  margin: 30px 0 auto;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid hsl(214, 10%, 87%);
   border-radius: 5px;
-  background-color: rgb(76, 81, 116);
+  background-image: url(https://th.bing.com/th/id/R.3109e732e6178941e0f720775ea06079?rik=grcVooOCK2FPnQ&riu=http%3a%2f%2fpavbca.com%2fwalldb%2foriginal%2f4%2f9%2fd%2f809487.jpg&ehk=f0tpc6Wtrw9yk3RX70xMeqQw10eCmpRKUWT9AImuQ28%3d&risl=&pid=ImgRaw&r=0);
   color: rgb(255, 255, 255);
   overflow: hidden;
 }
@@ -19,8 +19,10 @@ body {
 .weather-app {
   max-width: 590px;
   margin: 30px 0 auto;
+
   padding: 20px;
   border: 1px solid grey;
+
   border-radius: 5px;
   color: white;
   margin-bottom: 30px;
@@ -96,8 +98,8 @@ h1 {
 }
 
 button {
-  width: 100px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   outline: none;
   color: rgb(255, 255, 255);
   border: none;
