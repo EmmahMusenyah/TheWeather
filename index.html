@@ -22,12 +22,13 @@
     <div class="container">
       <form id="search-form" class="mb-3">
         <div class="row">
-          <div class="col-7">
+          <div class="col-9">
             <input
               type="search"
               placeholder="Enter a city Name"
               class="form-control"
               id="city-input"
+              autocomplete="off"
             />
           </div>
           <div class="col-3">
@@ -43,35 +44,36 @@
             Last updated:
             <span id="date"></span>
           </li>
+          <li></li>
         </ul>
         <div class="row">
           <div class="col-6">
-            <img src="" alt="Clear" id="icon" />
-            <span class="degrees" id="degrees"></span
-            ><span class="conversion"></span>
-              <a href="a" class="active" id="celsius-link">C</a> | <a href="a" id="fahrenheit-link">F</a>
+            <span>
+              <img src="" alt="Clear" id="icon" class="image" />
+            </span>
+            <span class="degrees" id="degrees"> </span>
+            <span class="conversion">
+              <a href="a" class="active" id="celsius-link"> °C</a> |
+              <a href="a" id="fahrenheit-link"> °F</a>
             </span>
           </div>
-
           <div class="col-6">
-            <ul>
-              <li class="description" id="description"></li>
-              <li id="comparison"></li>
-            </ul>
+            <div class="description" id="description"></div>
+            <div id="comparison"></div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-4">
-            Pressure:
+            PRESSURE
             <p id="pressure"></p>
           </div>
           <div class="col-4">
-            Humidity:
+            HUMIDITY
             <p id="humidity"></p>
           </div>
           <div class="col-4">
-            Wind:
+            🏳️ WIND
             <p id="wind"></p>
           </div>
         </div>

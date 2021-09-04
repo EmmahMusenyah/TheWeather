@@ -15,15 +15,21 @@ body {
   border: 1px solid hsl(214, 10%, 87%);
   border-radius: 5px;
   background-image: url(https://th.bing.com/th/id/R.3109e732e6178941e0f720775ea06079?rik=grcVooOCK2FPnQ&riu=http%3a%2f%2fpavbca.com%2fwalldb%2foriginal%2f4%2f9%2fd%2f809487.jpg&ehk=f0tpc6Wtrw9yk3RX70xMeqQw10eCmpRKUWT9AImuQ28%3d&risl=&pid=ImgRaw&r=0);
+  background: #0e1116;
   color: rgb(255, 255, 255);
   overflow: hidden;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.image {
+  top: -250px;
 }
 
 .weather-app {
   max-width: 590px;
-  margin: 30px 0 auto;
+  margin: 0 auto;
+  background-image: url("https://assets.msn.com/weathermapdata/1/static/background/v2.0/compactads3/Cloudy 2.png");
   padding: 20px;
-  border: 1px solid grey;
   border-radius: 5px;
   color: white;
   margin-bottom: 30px;
@@ -53,6 +59,7 @@ li {
   font-size: 60px;
   width: 94px;
   align-items: center;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .conversion {
@@ -99,11 +106,16 @@ h1 {
   opacity: 0.7;
 }
 
+.forecast {
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
 button {
   width: 200px;
   height: 200px;
   outline: none;
   color: rgb(255, 255, 255);
+  text-shadow: black 0.1em 0.1em 0.2em;
   border: none;
   width: inherit;
   position: relative;
