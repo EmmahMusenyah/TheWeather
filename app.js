@@ -92,6 +92,7 @@ function getForecast(coordinates) {
 function displayTemperature(response) {
   let degreesElement = document.querySelector("#degrees");
   let descriptionElement = document.querySelector("#description");
+  let cityElement = document.querySelector("#city");
   let comparisonElement = document.querySelector("#comparison");
   let comparison = Math.round(response.data.main.feels_like);
   let pressureElement = document.querySelector("#pressure");
@@ -104,6 +105,7 @@ function displayTemperature(response) {
 
   degreesElement.innerHTML = `${Math.round(response.data.main.temp)}`;
   descriptionElement.innerHTML = response.data.weather[0].description;
+  cityElement.innerHTML = response.data.name;
   comparisonElement.innerHTML = `Feels like ${comparison}°C`;
   pressureElement.innerHTML = `${response.data.main.pressure}Hg`;
   humidityElement.innerHTML = `${response.data.main.humidity}%`;
@@ -117,7 +119,6 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "3ba4ba419c4c391e4a4ac38b121708bc";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=3ba4ba419c4c391e4a4ac38b121708bc&units=metric`;
   axios.get(url).then(displayTemperature);
 }
@@ -158,4 +159,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("Nairobi");
+search("New York");
